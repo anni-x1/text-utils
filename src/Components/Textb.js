@@ -22,7 +22,7 @@ export default function Textb(props) {
       <div className='container my-2'>
         <h2 >Enter your text here.</h2>
         {/* <textarea  className={`form-control ${props.mod==='dark' ? 'light' : 'dark'}-blue`} name="mybox" onChange={handleOnChange} placeholder='paste your text here' value={text} rows={10} /><br /> */}
-        <textarea  id="textbox1" className={`form-control ${props.mod}-blue`} name="mybox" onChange={handleOnChange} placeholder='paste your text here' value={text} rows={10} /><br />
+        <textarea  id="textbox1" className={`form-control ${props.mod}-blue-text-area`} name="mybox" onChange={handleOnChange} placeholder='paste your text here' value={text} rows={10} /><br />
         <Button  className={`mx-2 ${props.mod}-blue`} htmlFor="textbox1" onClick={handleUp} >Convert to Uppercase</Button>
         <Button  className={`mx-2 ${props.mod}-blue`}  htmlFor="textbox1" onClick={handleLow} >Convert to Lowercase</Button>
         <Button  className={`mx-2 ${props.mod}-blue`} htmlFor="textbox1" onClick={handleCL} >Clear text</Button>
