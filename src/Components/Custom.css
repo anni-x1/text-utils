@@ -2,17 +2,21 @@
     background-color: rgb(12, 142, 230);
     color: rgb(0, 0, 0);
 }
-.light-blue-body{
-    background-color: rgb(141, 209, 255);
-    color: rgb(0, 0, 0);
-}
 .dark-blue{
     background-color: rgb(0, 32, 107);
     color: white;
 }
-.dark-blue-text-area{
+.light-blue-body{
+    background-color: rgb(141, 209, 255);
+    color: rgb(0, 0, 0);
+}
+.dark-text-area{
     background-color: rgb(92, 132, 192);
     color: white;
+}
+.light-text-area{
+    background-color: rgb(214, 227, 230);
+    color: rgb(0, 0, 0);
 }
 .dark-blue-body{
     background-color: rgb(50, 83, 161);
