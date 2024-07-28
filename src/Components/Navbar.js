@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 function NavScrollExample(props) {
   return (
-    <Navbar expand="lg" className={`navbar ${props.mod}-blue`} >
+    <Navbar expand="lg" className={`navbar ${props.mod}-blue`} to="/">
       <Container fluid>
-        <Navbar.Brand href="#">{props.title}</Navbar.Brand>
+        <Navbar.Brand><Link class="nav-item nav-link active" to={"/"}>{props.title}</Link></Navbar.Brand>
         
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -19,9 +19,15 @@ function NavScrollExample(props) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link  to="#action2">Contact</Link>
+            <li class="nav-item"  >
+              <Link class="nav-link active" to="/">Home</Link>
+            </li>
+            <li class="nav-item"  >
+              <Link class="nav-link active" to="/about">About</Link>
+            </li>
+            <li class="nav-item" >
+              <Link class="nav-link active" to="#action2">Contact</Link>
+            </li>
           </Nav>
           <Form.Check // prettier-ignore
             onClick={props.Toggle}
