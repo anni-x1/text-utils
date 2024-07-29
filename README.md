@@ -1,7 +1,3 @@
-Sure, here's a README.md for your code base:
-
-Copy
-Insert
 # Textbox Component
 
 This is a React component that allows users to enter text, convert it to uppercase or lowercase, clear the text, and get a summary of the text.
